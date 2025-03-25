@@ -1,0 +1,1 @@
+DIA : 19/03 - Alterações das imagens dos icones, as imagens foram editadas porque mesmo em png estavam sendo exibidas com fundo branco no chrome.
