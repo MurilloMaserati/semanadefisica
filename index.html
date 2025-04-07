@@ -6,11 +6,10 @@
     <title>XXIV Semana de Física</title>
     <link rel="stylesheet" href="semanadefisica.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
     <header>
-        
         <div class="fundo-topo"></div>
         <section class="logo">
             <img src="ostra.png" alt="Logo da Semana de Física">
@@ -21,7 +20,7 @@
             <p>Descubra mais sobre as oportunidades da física na XXIV Semana de Física!</p>
         </div>
     </header>
-    
+
     <section class="about">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -35,8 +34,8 @@
                     <img src="layout/Palestrante.png" alt="Slide 3">
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"><i class=""></i></div>
+            <div class="swiper-button-prev"><i class=""></i></div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
@@ -55,18 +54,6 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
