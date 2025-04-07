@@ -17,6 +17,65 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    background-color: #3b0086; /* Roxo */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos do Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3b0086; /* Roxo mais escuro */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 101;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Hover no link principal do dropdown */
+nav ul li:hover > a {
+    background-color: #3b0086; /* Roxo mais claro */
+}
+
+/* Mostrar o dropdown ao passar o mouse no item da lista */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover nos itens do dropdown */
+.dropdown-content a:hover {
+    background-color: #6833ad; /* Roxo bem claro */
+    color: #ffffff; /* Texto preto no hover */
+}
+
 header, footer {
     position: relative;
     padding: 0;
@@ -50,7 +109,7 @@ header::before, header::after {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 350px;
+    width: 330px;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -122,7 +181,7 @@ header .logo img {
 
 header h1 {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
@@ -145,10 +204,10 @@ main {
 }
 
 .about {
-    background: #5c10c0;
+    background: #3b0086;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 5px;
     text-align: center;
     position: relative;
     z-index: 5;
